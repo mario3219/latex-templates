@@ -1,0 +1,155 @@
+\documentclass[twoside,twocolumn,9pt,a4paper]{IEEEtran}
+\usepackage{graphics,epsfig,amsmath,graphpap}
+\usepackage{multirow,cite,hyperref}
+%\usepackage[applemac]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+
+\begin{document}
+
+\title{Titel på projektrapport i klinnovation}
+\author{
+Förnamn Efternamn (BME--XX), Förnamn Efternamn (BME--XX)
+\thanks{Inlämnat den \today}
+\thanks{Emejladress:\{adress1, adress2\}}
+\thanks{Teknisk handledare: Namn, institution}
+\thanks{Klinisk handledare: Namn, institution}
+\thanks{Engelsk titel (alternativt svensk titel om rapporten är på engelska): Titel of project report in Klinnovation}
+}
+\maketitle
+
+%-----------------------------------------------------------------------------------------------------------------------
+
+\begin{abstract}
+Sammanfattningen är kort och koncist utformad (maximalt 250 ord), och ger läsaren en snabborientering om rapportens innehåll. Sammanfattningen rymmer bara uppgifter som redan ingår i rapporten och får inte hänvisa till övriga delar i rapporten. En lämplig struktur på sammanfattningen är som följer: kort bakgrund till behandlat problem, syfte med projektet, var projektet genomförts, kort beskrivning av metod, viktigaste resultat och dess betydelse. Tänk på att när man söker på en rapport eller artikel är sammanfattningen/abstractet det som gör att man bestämmer sig för om skall fortsätta läsa rapporten eller söka vidare på annat håll. Det är alltså viktigt att inkludera alla huvudresultat och berätta vad man kommit fram till. Undvik också formuleringar av typen ''...har undersökts''‚ ''...har byggts'' eller ''...har visats'', som tenderar att ge sammanfattningen intrycket av en innehållsförteckning i textform. För att ge en uppskattning av hur mycket textmassa 250 ord omfattar har till och med sista ordet i meningen utnyttjats 153 ord.
+\end{abstract}
+
+%-----------------------------------------------------------------------------------------------------------------------
+
+\section{Introduktion} \label{secIntroduction}
+
+\IEEEPARstart{S}{yftet} med detta avsnitt är att få läsaren att förstå att det är värt besväret att läsa artikeln eller rapporten. Typiskt består introduktionen av tre delar: en bakgrundsteckning, en tes (påstående) och en agenda. {\bf (OBS ni behöver inte dela upp er introduktion i A-D som nedan).}
+
+\subsection{Bakgrundsteckning}
+
+Bakgrundsteckningen är en beskrivning av tidigare arbeten och forskning inom det aktuella området (litteraturstudie). I Klinnovationsrapporten skall avsnittet avspegla att författarna skaffat sig betydande kunskap inom området vad gäller såväl nya metoder som tillhörande viktiga resultat --- kunskap som skall förmedlas till läsaren på ett begripligt sätt. De källor som använts skall tydligt redovisas i form av referenshänvisningar (formatet på de vanligaste hänvisningarna är som följer: tidskriftsartikel \cite{Cavalcanti2004} och bok \cite{EEG_Silva}), där referenslistan naturligt blir placerad i slutet av rapporten. Notera att en referens skall placeras i slutet av en mening om meningen relaterar till innehållet i referensen, dvs meningen ska avslutas med referensen här~\cite{Cavalcanti2004}!
+
+Det går ganska lätt att få ihop en sådan historik, det svåra är att få den att hänga ihop logiskt och att naturligt leda fram till din \textit{tes}.
+
+\subsection{Tes}
+
+Det viktigaste avsnittet i hela introduktionen (eller möjligen hela rapporten) återfinns lömskt nog i mitten. Det är där man formulerar syftet med det arbete man presenterar och varför det är värt att genomföra. Den motiveringen skall följa naturligt från bakgrundsteckningen. Exempel: ‚''Skrivkramp är en åkomma som drabbar över 90\% av landets studenter...har härletts till användning av pennor...överdrivet skrivande utan vila för handens muskler‚''. Efter denna beskrivning av problemet följer en viktig länk som gör klart var det finns en brist i dagens kunskap eller teknik. ‚''Det finns idag inget hjälpmedel som kan begränsa uppkomsten av skrivkramp...'' vilket leder fram till tesen: ‚''Vi presenterar här ett fingerstöd...''. Vanligtvis skrivs rapporter av det här slaget i passiv form, men det är inte fel att använda ‚''vi‚'' här för att markera att här tar historiken slut, och nu börjar det som vi tillför området.
+
+I kliniskt orienterade studier är det vanligt att en hypotes formuleras och testas. Om så är fallet för aktuellt projekt skall denna hypotes inkluderas i slutet av detta avsnitt. Exempelvis kan hypotesen för det ovanstående problemet vara att ''användningen av fingerstöd under genomförandet av en kurs minskar förekomsten av skrivkramp''. Denna visas då med en undersökning där en grupp studenter använder stödet, och kontrollgruppen inte. En statistisk analys anger hur sannolikt det är att stödet fungerar. 
+
+\subsection{Agenda}
+
+Det sista stycket i introduktionen skall ge en kortfattad beskrivning av hur rapporten är upplagd för att visa din tes. Håll denna kort, och undvik att göra det till en uppräkning. Tänk istället att agendan skall användas för att klargöra din tes. 
+
+\subsection{Övrigt}
+
+Om så önskas kan introduktionen delas upp i ett antal underavsnitt med tillhörande, lämpliga rubriker. Observera att underrubrikerna som använts här bara är exempel. Man skriver aldrig ut de tre delarna, utan det är mer som en tankehjälp när ni skriver.
+
+Notera att \textbf{rapportens totala längd skall vara på minst 7 sidor och max 8 sidor} när den typsatts i \LaTeX, dvs. tvåspaltig text i IEEE-format som gäller för detta dokument. Kravet på total längd kan för vissa författare innebära att en urvalsprocess behöver tillämpas där de viktigaste resultaten bara kan inkluderas i rapporten. En sådan urvalsprocess förkommer i väsentligen alla sammanhang efter universitetsstudierna! 
+
+Texterna av Landes \cite{Landes1951} och Claerbout \cite{Claerbout1991} är mycket läsvärda och har tjänat som inspiration till tankarna kring sammanfattning och introduktion.
+
+%--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+%-----------------------------------------------------------------------------------------------------------------------
+
+\section{Metod} \label{secAfibMethods}
+
+De metoder som utvecklats eller implementerats inom ramen för projektet skall beskrivas i detta avsnitt, liksom designen av de experiment som eventuellt har utförts. Strävan är att utforma texten såpass detaljerat att läsare med lämpliga baskunskaper skall kunna genomföra det beskrivna arbetet och nå samma resultat (om än att denna strävan i de flesta fall får ses som just en strävan!). Det är viktigt att valet av metoder och genomförda experiment ges bra motivation. Eventuella samband som finns mellan existerande och nyutvecklade metoder skall behandlas längre fram i avsnittet Diskussion.
+
+Beroende på projektets karaktär kan detta avsnitt bestå av såväl ren text som text som innehåller ett antal välvalda ekvationer, t.ex. som den i \eqref{eqHz} nedan. Detta avsnitt, vars längd inte skall överskrida 3~sidor, kan indelas i underavsnitt och, om så önskas, innefatta blockdiagram eller andra typer av illustrationer.
+\begin{equation}
+H(z) = \frac{1}{1+a_1z^{-1}+a_2z^{-2}}
+\label{eqHz}
+\end{equation}
+
+
+%--------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section{Resultat}
+De resultat som framkommit under arbetets gång redovisas här på ett logiskt vis, och inte nödvändigtvis i den ordning de har framkommit under arbetets gång. Resultaten beskrivs i löpande text på tydligt sätt, med länkar till lämpligt valda figurer, diagram och tabeller för ökad förståelse; en sådan länk exemplifieras med Figur~\ref{figExempelSignal}. Andras figurer och diagram får bara inkluderas i rapporten om tillstånd (copyright) finns för användning.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=8.5cm]{stcbild.eps} %figurer sparas lämpligen i eps format
+\caption{Exempel på figur. Det är viktigt att inte bara axlarna graderas utan att även storhet/enhet anges --- i detta fallet ''amplitud ($\mu$V)'' och ''tid (s)''. Undvik att använda automatskalning i Matlab!}
+\label{figExempelSignal}
+\end{center}
+\end{figure}
+
+Det kan även vara lämpligt, och inte minst överskådligt, att sammanfatta de viktigaste resultaten i en tabell, exemplifierat i tabell~\ref{tableData}. 
+
+\begin{table}[h]
+\begin{center}
+\caption{Här beskrivs kort vilka resultat/siffror som presenteras i tabellen.}
+\renewcommand\arraystretch{1.25}
+\begin{tabular}{|l|c|c|c|c|} \hline
+ & Grupp 1 & Grupp 2 \\ \hline\hline
+Resultat 1 &957  & 510 \\ \hline
+Resultat 2 & 69 & 55  \\ \hline
+Resultat 3 & 70 & 94 \\ \hline
+Resultat 4  & 8 & 9 \\ \hline
+\end{tabular}
+\label{tableData}
+\end{center}
+\end{table}
+
+Resultatavsnittet kan innehålla korta kommentarer till resultaten, medan de mera vidlyftiga tolkningarna, implikationerna och spekulationerna hänskjuts till diskussionen i nästa avsnitt; slutsatserna från resultaten ska presenteras i ett eget avsnitt längre fram.
+
+
+
+
+%--------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section{Diskussion}
+Detta avsnitt, vars längd inte skall överskrida 1~sida, är platsen för vidlyftiga tolkningar och spekulationer rörande de resultat som erhållits under arbetets gång. Här kan eventuella samband mellan existerande och nyutvecklade metoder diskuteras, och fördelar respektive nackdelar med den utvecklade metoden kan diskuteras. Speciellt för er rapport är att ni skall ha med stycken som addresserar  \textbf{hållbar utveckling} och \textbf{etik}, gärna med egna underrubriker. 
+
+Här kan vara värt att påpeka att de flesta baxnar inför uppgiften att skriva en rapport. Det kan bottna i att man tror att man börjar med sammanfattningen och sedan fortsätter med introduktion, metod etc. Faktum är att det lättaste är att börja med metodavsnittet, och sedan arbeta sig ''utåt'': resultat, diskussion, introduktion, slutsats. Sammanfattningen bör man vänta med till sist, när man har hela rapporten ''i huvudet'' och därför lättare kan formulera en sammanfattning. 
+
+%--------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section{Slutsatser}
+De viktigaste slutsatserna från projektet redovisas här (6--8 rader). Observera att dessa bör kopplas ihop med den tes man formulerade i introduktionen.
+
+%--------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section{Efterord}
+
+De personer som, på något sätt bidragit, till projektets genomförande omnämns här. Vidare skall en kort redogörelse av respektive författares arbetsinsats inkluderas. 
+ 
+%--------------------------------------------------------------------------------------------------------------------------------------------------
+
+\appendix 
+Ni kan välja att lägga till \textbf{en} sida som bilaga. Här kan man t ex presentera programkod, långa matematiska härledningar, kretsscheman eller annat relevant information som inte passar in i rapportens textflöde.
+
+\LaTeX \ kan exempelvis laddas ner från \texttt{\url{http://www.tug.org/mactex/}}  eller \texttt{\url{http://miktex.org/download}} för Mac- resp. PC-användare. Information om hur man skriver i \LaTeX \ finns i Per Forebys \href{http://www.ddg.lth.se/perf/handledning/handledning.pdf}{\texttt{handledning}}  (DDG-gruppen på LTH).
+
+Detta dokument kan och ska naturligtvis användas som utgångspunkt för projektrapporten. Observera att \textbf{stavningskontroll} måste göras innan dokumentet lämnas in. En extra genomläsning kan leda till att du hittar något litet försmädligt fel --- gör det!
+
+
+
+
+%--------------------------------------------------------------------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} % IEEE-format
+
+\bibitem{Cavalcanti2004} S.~Cavalcanti, A.~Ciandrini, S.~Severi, F.~Badiali, S.~Bini, A.~Gattiani, L.~Cagnoli, and A.~Santoro. ``Model-based study of the effects of the hemodialysis technique on the compensatory response to hypovolemia,'' \textit{Kidney Int.}, vol.~65, pp.~1499--1510, 2004.
+
+\bibitem{EEG_Silva} E. Niedermeyer and F. {Lopes da Silva}, \textit{Electroencephalography. Basic Principles, Clinical Applications and Related Fields}. Baltimore: Williams \& Wilkins, 1998.
+
+\bibitem{Landes1951} K.~K.~Landes, A scrutiny of the abstract, AAPG Bulletin, vol.~35, p.~1660, 1951.
+
+\bibitem{Claerbout1991} J.~Claerbout. ‚''Scrutiny of the introduction‚'', \textit{Geophysics}, vol. 10, pp.~39--41, 1991.
+
+\end{thebibliography}
+
+\end{document}
